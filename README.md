@@ -102,39 +102,113 @@ Q(t+1)=T′Q(t)+TQ(t)′
 ⇒Q(t+1)=T⊕Q(t)
 
 ### Procedure
-/* write all the steps invloved */
+SR flip flop
+
+SR flip-flop is a gated set-reset flip-flop. The S and R inputs control the state of the flip-flop when the clock pulse goes from LOW to HIGH . The flip-flop will not change until the clock pulse is on a rising edge. When both S and R are simultaneously HIGH, it is uncertain whether the outputs will be HIGH or LOW.
+
+JK flip flop
+
+When both of the inputs of JK flip flop are set to 1 and clock input is also pulse "High" then from the SET state to a RESET state, the circuit will be toggled. The JK flip flop work as a T-type toggle flip flop when both of its inputs are set to 1. The JK flip flop is an improved clocked SR flip flop
+
+Delay flip flop
+
+The Delay flip-flop is designed using a gated SR flip-flop with an inverter connected between the inputs allowing for a single input D(Data). This single data input, which is labeled as "D" used in place of the "Set" input and for the complementary "Reset" input, the inverter is used.
+
+Toggle flip flop
+
+The toggle, or T, flip-flop is a two-input flip-flop . The inputs are the toggle (T) input and a clock (CLK) input. If the toggle input is HIGH, the T flip-flop changes state (toggles) when the clock signal is applied. If the toggle input is LOW, the T flip-flop holds the previous state. T flip-flop symbol.
 
 
 
 ### PROGRAM 
+```
 /*
 Program for flipflops  and verify its truth table in quartus using Verilog programming.
-Developed by: 
-RegisterNumber:  
+Developed by: Migal G Arunadann
+RegisterNumber: 22006541
 */
 
+SR flip flop:
 
+module exp5i(s,r,clk,q, qbar);
+input s,r,clk;
+output q,qbar;
+wire x,y;
+nand (x,s,clk);
+nand (y,r,clk);
+nand (q,x,qbar);
+nand (qbar,y,q);
+endmodule
 
+JK flip flop:
 
+module jk(j,k,clk,q,qbar);
+input j,k,clk;
+output q,qbar;
+wire x,y;
+nand (x, j,clk,qbar);
+nand (y,k,clk,q);
+nand (q,x,qbar);
+nand (qbar,y,q);
+endmodule
+
+Toggle flip flop:
+
+module tft(t,clk,q,qbar);
+input t,clk;
+output q,qbar;
+wire s,r;
+nand(s,t,clk,qbar);
+nand(r,t,clk,q);
+nand(q,s,qbar);
+nand(qbar,r,q);
+endmodule
+
+Delay flip flop:
+
+module delayi(d,clk,q,qbar);
+input d,clk;
+output q,qbar;
+assign dbar=!d;
+wire x,y;
+nand(x,d,clk);
+nand(y,dbar,clk);
+nand(q,x,qbar);
+nand(qbar,y,q);
+endmodule
 
 
 ### RTL LOGIC FOR FLIPFLOPS 
 
+SR:
+![sr](https://user-images.githubusercontent.com/118262199/215334816-d7f1e7e2-392c-43db-b969-b71d9b0275c3.png)
+
+JK:
+![jk](https://user-images.githubusercontent.com/118262199/215334836-4d5447a4-9218-4cd5-8939-c2604eb6867f.png)
+
+Toggle :
+![t](https://user-images.githubusercontent.com/118262199/215334946-4bf6e5e6-46f8-43dc-9217-4fa720a37660.png)
 
 
-
-
-
+Delay
+![d](https://user-images.githubusercontent.com/118262199/215334972-4f2d6e7b-8c4c-4dda-8407-e3be91fbe702.png)
 
 
 
 ### TIMING DIGRAMS FOR FLIP FLOPS 
 
+![srwave](https://user-images.githubusercontent.com/118262199/215334993-37eb3f63-5576-440a-b48e-add4070a0c26.png)
 
 
+![jkwave](https://user-images.githubusercontent.com/118262199/215334982-090ae320-0013-4b16-a631-bec48ea740f4.png)
 
 
+![twave](https://user-images.githubusercontent.com/118262199/215335005-ff11f223-513c-47d1-b0be-b0b8900eec6c.png)
+
+
+![dwave](https://user-images.githubusercontent.com/118262199/215335014-3c5acb64-bcb4-47a3-a014-7e6eefb11b28.png)
 
 
 
 ### RESULTS 
+Thus the above program is successfully runned
