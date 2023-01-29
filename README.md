@@ -177,10 +177,13 @@ nand(q,x,qbar);
 nand(qbar,y,q);
 endmodule
 
-
+```
 ### RTL LOGIC FOR FLIPFLOPS 
-![sr](https://user-images.githubusercontent.com/118262199/215336433-5b6278a6-e241-4434-bf4b-e9f866660391.png)
 
+![sr](https://user-images.githubusercontent.com/118262199/215339516-766c8412-067b-4c56-bcd2-df5d10ed6921.png)
+![jk](https://user-images.githubusercontent.com/118262199/215339525-6facfd0a-a6eb-4262-99e3-9b7f64294ff4.png)
+![t](https://user-images.githubusercontent.com/118262199/215339531-009a89fc-34c4-4203-9500-41dc7a4408db.png)
+![d](https://user-images.githubusercontent.com/118262199/215339539-0e4c3271-f5ab-41d8-bdd7-025131a385f1.png)
 
 
 
@@ -188,6 +191,10 @@ endmodule
 
 ### TIMING DIGRAMS FOR FLIP FLOPS 
 
+![srwave](https://user-images.githubusercontent.com/118262199/215339560-cef3818b-ec96-409f-afaa-2a2315723745.png)
+![jkwave](https://user-images.githubusercontent.com/118262199/215339549-36a15b0c-992a-4725-a355-cfa09524de56.png)
+![twave](https://user-images.githubusercontent.com/118262199/215339575-d037665e-e22c-46e8-b60e-e348a873cea4.png)
+![dwave](https://user-images.githubusercontent.com/118262199/215339578-8493619f-dbe5-4dc7-b6cc-8a6d521cfeb6.png)
 
 
 
