@@ -180,32 +180,14 @@ endmodule
 
 ### RTL LOGIC FOR FLIPFLOPS 
 
-SR:
-![sr](https://user-images.githubusercontent.com/118262199/215335092-0fc3a025-8425-403a-b9d4-f3656cec7808.png)
+![sr](https://user-images.githubusercontent.com/118262199/215336370-176054e0-0b57-48e0-9b4c-5deacc35b04c.png)
 
-JK:
-![jk](https://user-images.githubusercontent.com/118262199/215335103-d405fd7b-2267-47dc-903e-26f887e698bc.png)
-
-Toggle :
-![t](https://user-images.githubusercontent.com/118262199/215335118-f47c8e9a-b402-4578-8bc5-3c80d380385a.png)
-
-Delay
-![d](https://user-images.githubusercontent.com/118262199/215335151-a82e07a3-f1c4-42f3-805e-55cfbdd7af83.png)
 
 
 
 ### TIMING DIGRAMS FOR FLIP FLOPS 
 
-![srwave](https://user-images.githubusercontent.com/118262199/215335163-676d29d5-354e-401a-bdab-02bf14a93009.png)
 
-
-![jkwave](https://user-images.githubusercontent.com/118262199/215335173-313bdfb9-f016-433d-bf46-4880ad41b76e.png)
-
-
-![twave](https://user-images.githubusercontent.com/118262199/215335186-11d7348d-a1b5-40c7-9406-25085ddf91f2.png)
-
-
-![dwave](https://user-images.githubusercontent.com/118262199/215335200-afcd3064-3cfe-46ae-8d9f-9d91c46dfb11.png)
 
 
 
