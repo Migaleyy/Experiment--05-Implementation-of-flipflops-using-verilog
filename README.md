@@ -179,8 +179,9 @@ endmodule
 
 
 ### RTL LOGIC FOR FLIPFLOPS 
+![sr](https://user-images.githubusercontent.com/118262199/215336433-5b6278a6-e241-4434-bf4b-e9f866660391.png)
 
-![sr](https://user-images.githubusercontent.com/118262199/215336370-176054e0-0b57-48e0-9b4c-5deacc35b04c.png)
+
 
 
 
